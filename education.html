@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="Image/logo.PNG" type="image/x-icon">
+    <title>Hello --- Satyam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('Image/study.gif');
+            background-repeat: no-repeat;
+            /*height: 100vh;*/
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        #divEdu{
+            width:50%;
+            border:5px solid darkkhaki;
+            margin-bottom: 50px;
+            margin-left:25%;
+        }
+
+        #divIntro {
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        p, h2, h1, h3 {
+            color: lightcyan;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: E9E8E8;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 9px;
+                text-decoration: none;
+                font-size: 15px;
+                font-family: cursive;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+            .topnav .icon {
+                display: none;
+            }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+                height: 100%;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+                height: 100%;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+        }
+
+        body {
+            padding: 40px;
+        }
+
+        /* Animation */
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0,40px,0);
+            }
+
+            to {
+                transform: translate3d(0,0,0);
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                transform: translate3d(0,40px,0);
+            }
+
+            to {
+                transform: translate3d(0,0,0);
+                opacity: 1;
+            }
+        }
+
+        .animated {
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-fill-mode: both;
+        }
+
+        .animatedFadeInUp {
+            opacity: 0;
+        }
+
+        .fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+        }
+        img{
+            height: 30px;
+    width: auto;
+    vertical-align: middle;
+    border-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Introduction</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="Satyam Prakash Resume.pdf" target="_parent" download="Satyam Prakash Resume">Resume</a>
+        <a href="https://www.codechef.com/users/spp____" target="_blank"><img src="Image/codechef.jpg"></a>
+        <a href="http://codeforces.com/profile/spp____" target="_blank"><img src="Image/codeforces.png"></a>
+        <a href="https://www.hackerrank.com/SPP_Coders" target="_blank"><img src="Image/hackrank.jpg"></a>
+        <a href="https://www.hackerearth.com/@prakashsatyam5" target="_blank"><img src="Image/hackerearth.png"></a>
+        <a href="https://www.linkedin.com/in/satyamprakash/" target="_blank"><img src="Image/linkedin.jpg"></a>
+        <a href="https://github.com/satyam010" target="_blank"><img src="Image/GitHub-Mark.png"></a>
+        <a href="mailto:prakashsatyam5@gmail.com"><img src="Image/email.svg"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="container animated animatedFadeInUp fadeInUp" style="text-align:center;padding-top: 15px;">
+        <div class="row">
+            <div class="col-sm-4" id="divEdu">
+                <h2>Bachelors in Computer Science</h2>
+                <h3>Expected May'2020</h3>
+                <p>JUET Guna</p>
+                <p>Guna, Madhya Pradesh</p>
+                <p>CGPA: 7.6/10</p>
+            </div>
+            <div class="col-sm-4" id="divEdu">
+                <h2>Higher Secondary School(12th)</h2>
+                <h3>Graduated 2015</h3>
+                <p>City Montessori School</p>
+                <p>Gomti Nagar, Lucknow</p>
+                <p>Percentage: 96</p>
+            </div>
+            <div class="col-sm-4" id="divEdu">
+                <h2>Secondary School(10th)</h2>
+                <h3>Graduated 2013</h3>
+                <p>City Montessori School</p>
+                <p>Gomti Nagar, Lucknow</p>
+                <p>Percentage: 86</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+
+</body>
+</html>
